@@ -153,7 +153,7 @@ public abstract class AbstractObservableSet<E> extends AbstractSet<E> implements
     }
 
     protected abstract boolean backingSetIsEmpty();
-
+//    TODO:Unnecessary private methods
     private void itemInvalidated(Observable o) {
         fireInvalidated();
     }
