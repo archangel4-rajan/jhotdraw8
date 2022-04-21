@@ -41,8 +41,7 @@ public class MinimumSpanningTreeAlgo {
     }
 
     public static <VV> void union(@NonNull List<VV> uset, @NonNull List<VV> vset, @NonNull Map<VV, List<VV>> forest) {
-//        TODO:Use equals to compare object references
-        if (uset != vset) {
+        if (!uset.equals(vset)) {
             if (uset.size() < vset.size()) {
                 for (VV uu : uset) {
                     forest.put(uu, vset);

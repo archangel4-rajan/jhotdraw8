@@ -54,8 +54,7 @@ public class DisjointSetsAlgo {
             for (V v : getNextVertices.apply(u)) {
                 List<V> uset = forest.get(u);
                 List<V> vset = forest.get(v);
-//                TODO: Use equals to compare object references
-                if (uset != vset) {
+                if (!uset.equals(vset)) {
                     MinimumSpanningTreeAlgo.union(uset, vset, forest);
                 }
             }
