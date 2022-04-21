@@ -25,13 +25,14 @@ public class UriUtil {
     /**
      * Don't let anyone instantiate this class.
      */
+//    TODO:Remove unused private methods
     private UriUtil() {
     }
 
     /**
      * Prevent instance creation.
      */
-//    TODO:Remove unused private method
+//    TODO:Remove unused private methods
     private void URIUtil() {
     }
 
