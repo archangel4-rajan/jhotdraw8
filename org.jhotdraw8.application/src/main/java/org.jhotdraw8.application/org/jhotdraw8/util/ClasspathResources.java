@@ -31,11 +31,6 @@ public class ClasspathResources extends ResourceBundle implements Serializable, 
      * The base name of the resource bundle.
      */
     private final @NonNull String baseName;
-    /**
-     * The locale.
-     */
-//    TODO:Remove unused private field locale
-    private final @NonNull Locale locale;
 
     /**
      * The parent resources object.
