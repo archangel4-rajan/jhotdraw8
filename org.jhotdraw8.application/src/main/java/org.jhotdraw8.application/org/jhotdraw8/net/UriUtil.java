@@ -23,12 +23,6 @@ import java.util.Map;
 public class UriUtil {
 
 
-    /**
-     * Prevent instance creation.
-     */
-//    TODO:Remove unused private methods
-    private void URIUtil() {
-    }
 
     /**
      * Returns the name of an URI for display in the title bar of a window.
