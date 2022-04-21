@@ -101,9 +101,7 @@ public abstract class AbstractDrawingEditor implements DrawingEditor {
                 DrawingView removed = change.getElementRemoved();
                 removed.setEditor(null);
                 removed.focusedProperty().removeListener(focusListener);
-//                TODO: Collapsable If statements, can be merged into one
-                if (getActiveDrawingView() != null) {
-                    if (getActiveDrawingView() == removed) {
+                if (getActiveDrawingView() != null && getActiveDrawingView() == removed) {
                         setActiveDrawingView(drawingViews.isEmpty() ? null : drawingViews.get().iterator().next());
                     }
                 }
