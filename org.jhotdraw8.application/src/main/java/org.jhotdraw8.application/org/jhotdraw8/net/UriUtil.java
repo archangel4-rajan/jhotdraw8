@@ -31,6 +31,7 @@ public class UriUtil {
     /**
      * Prevent instance creation.
      */
+//    TODO:Remove unused private method
     private void URIUtil() {
     }
 
