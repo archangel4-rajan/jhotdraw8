@@ -567,11 +567,9 @@ public abstract class AbstractFigureFactory implements FigureFactory {
         }
 
 
-//        TODO: return the value directly instead of saving a local variable
         @Override
         public int hashCode() {
-            int hash = 7;
-            return hash;
+            return 7;
         }
 
         @Override
