@@ -198,10 +198,9 @@ public interface Resources {
      * @param arguments the arguments
      * @return formatted String
      */
-//    TODO:Calling toString on a string object unnecessary
     default @NonNull String format(@NonNull String key, Object... arguments) {
         //return String.format(resource.getLocale(), getString(key), arguments);
-        return new Formatter(getLocale()).format(getString(key), arguments).toString();
+        return new Formatter(getLocale()).format(getString(key), arguments);
     }
 
     /**
