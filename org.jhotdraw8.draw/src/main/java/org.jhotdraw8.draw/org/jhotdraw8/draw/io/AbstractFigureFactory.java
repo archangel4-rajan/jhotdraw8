@@ -566,6 +566,8 @@ public abstract class AbstractFigureFactory implements FigureFactory {
             this.acc = acc;
         }
 
+
+//        TODO: return the value directly instead of saving a local variable
         @Override
         public int hashCode() {
             int hash = 7;
