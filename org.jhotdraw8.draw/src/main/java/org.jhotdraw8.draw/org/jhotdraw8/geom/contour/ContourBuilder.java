@@ -382,6 +382,7 @@ public class ContourBuilder {
 
             // must do final singularity prune between first and second vertex after joining curves (n, 0)
             // and (0, 1)
+//            TODO: Collapsable IF statements
             if (result.size() > 1) {
                 if (Geom.almostEqual(result.get(0).pos(), result.get(1).pos(), realPrecision)) {
                     result.remove(0);
