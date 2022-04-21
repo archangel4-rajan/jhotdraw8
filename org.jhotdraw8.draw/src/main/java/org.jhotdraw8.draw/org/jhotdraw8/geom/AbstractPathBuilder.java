@@ -23,7 +23,7 @@ public abstract class AbstractPathBuilder<T> implements PathBuilder<T> {
     public AbstractPathBuilder() {
     }
 
-//    TODO:Too many repeated IllegalStateException with same arguments.
+//    TODO:Too many repeated IllegalStateException with same arguments. Using single exception object
     @Override
     public void arcTo(double radiusX, double radiusY, double xAxisRotation, double x, double y, boolean largeArcFlag, boolean sweepFlag) {
         if (numCommands++ == 0) {
