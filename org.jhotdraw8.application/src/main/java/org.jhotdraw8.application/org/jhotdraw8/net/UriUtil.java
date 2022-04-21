@@ -22,12 +22,6 @@ import java.util.Map;
  */
 public class UriUtil {
 
-    /**
-     * Don't let anyone instantiate this class.
-     */
-//    TODO:Remove unused private methods
-    private UriUtil() {
-    }
 
     /**
      * Prevent instance creation.
